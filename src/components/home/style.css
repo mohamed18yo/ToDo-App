@@ -1,0 +1,35 @@
+
+
+.ineer-container{
+    width: 1140px;
+    display: flex;
+    color: #fff;
+    flex-direction:column;
+    align-items: center;
+    
+}
+.input-section{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-top: 3rem;
+
+    margin-bottom: 3rem;
+}
+.task-input{
+    width: 70%;
+    height: 25px;
+    border: none;
+    border-radius: 21px;
+}
+.task-input::placeholder{
+    padding-left: 10px;
+}
+.task-input:focus{
+    border: none;
+    outline: none;
+}
+
+.item-list{
+    width: 100%;
+}
