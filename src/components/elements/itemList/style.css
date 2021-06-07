@@ -14,7 +14,7 @@
     box-sizing: border-box;
     padding: 5px;
     border-radius: 10px;
-    /* overflow-y: auto; */
+    overflow-y: auto;
     /* some change */
 }
 .item span{

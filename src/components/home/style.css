@@ -6,6 +6,7 @@
     color: #fff;
     flex-direction:column;
     align-items: center;
+    /* overflow-y: auto; */
     
 }
 .input-section{
@@ -21,15 +22,24 @@
     height: 25px;
     border: none;
     border-radius: 21px;
+    text-indent: 10px;
 }
-.task-input::placeholder{
+/* .task-input::placeholder{
     padding-left: 10px;
-}
+} */
 .task-input:focus{
     border: none;
     outline: none;
 }
 
 .item-list{
+    width: 100%;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.input-box input{
     width: 100%;
 }
