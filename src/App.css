@@ -35,7 +35,7 @@ main{
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  background: linear-gradient(rgba(43, 47, 100, 0.89),rgba(60, 71, 231, 0.89));
+  background: linear-gradient(rgba(43, 47, 100, 0.89),rgba(120, 60, 231, 0.89));
   min-height: 100vh;
  
 }

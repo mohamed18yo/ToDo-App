@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(23, 21, 134);
+    background: linear-gradient(rgba(43, 47, 100, 0.89),rgba(99, 22, 241, 0.89));
     color: #fff;
     height:25px;
     border:none;
@@ -30,5 +30,5 @@
     cursor: pointer;
 }
 .blueBtn:hover{
-    background-color:rgb(23, 21, 100) ;
+    background: rgb(23, 21, 100) ;
 }
