@@ -15,20 +15,34 @@ class Home extends Component {
   };
 
   componentDidMount() {
+
+    // async = promis 
+    // by async 
     const fetchData = async () => {
       try {
         const res = await axios.get(
           "https://jsonplaceholder.typicode.com/todos"
         );
-        console.log(res);
+       
         this.setState({
-          list: res.data,
+          list: res.data.splice(0,5) 
         });
       } catch (e) {
         console.log(e);
       }
     };
     fetchData();
+
+    //by promis 
+
+    // axios.get('https://jsonplaceholder.typicode.com/todos').then(res=>{
+    //   console.log(res);
+    //   this.setState({
+    //     list: res.data.splice(0,5)
+    //   })
+    // }).catch((e)=>{
+    //   console.log(e);
+    // })
   }
   render() {
     return (
@@ -53,7 +67,7 @@ class Home extends Component {
             handleClick={() => {
               if (this.state.value) {
                 const updatedArr = [
-                  { id: uuidv4(), name: this.state.value },
+                  { id: uuidv4(), title: this.state.value },
                   ...this.state.list,
                 ];
                 this.setState({ list: updatedArr, value: "", error: "" });
