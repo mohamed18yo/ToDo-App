@@ -1,10 +1,9 @@
-import { Component, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "../elements/butoon/Butoon";
 import { v4 as uuidv4 } from "uuid";
 import ItemList from "../elements/itemList/ItemList";
 
 import "./style.css";
-import { Data } from "../../data/Data";
 import axios from "axios";
 
 function Home() {
@@ -65,6 +64,7 @@ function Home() {
         ></Button>
       </section>
       <section className="item-list">
+        
         {list?.length ? (
           list.map((item) => (
             <ItemList
@@ -72,6 +72,7 @@ function Home() {
               key={item.id}
               handleDelete={() => {
                 const filteredItems = list.filter(
+                  // eslint-disable-next-line eqeqeq
                   (items) => items.id != item.id
                 );
                 setList(filteredItems);

@@ -1,22 +1,17 @@
-import { Component } from "react";
 
 
 import "./style.css"
 
-class Button extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
+function Button(props){
     return (
       <button
-       className={this.props.isPurble ? "btn blueBtn" : "btn"}
-        onClick={this.props.handleClick}
+       className={props.isPurble ? "btn blueBtn" : "btn"}
+        onClick={props.handleClick}
       >
-        {this.props.title}
+        {props.title}
       </button>
     );
   }
-}
+
 
 export default Button
